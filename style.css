@@ -123,7 +123,7 @@ body{
     left: 355px;
 }
 
-button{
+.btn{
    width: 300px;
    height: 40px;
    border-radius: 30px;
@@ -224,7 +224,7 @@ button{
     font-weight: 600;
     font-size: 20px; 
 }
-button{
+.btn{
     margin-top: 130px;
     position: absolute;
     left: 100px;
