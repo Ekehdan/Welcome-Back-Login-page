@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form  id="form-wrapper">
     <h2 class="welcome">
     Welcome Back!!
 </h2>
@@ -14,10 +15,10 @@
 <h2 class="email">Email</h2>
 
 
-<input class="input" type="text" placeholder="email@gmail.com" required>
+<input class="input" type="text" placeholder="email@gmail.com" name="email">
 
 
-<input class="input2" type="text" placeholder="enter your password"> 
+<input class="input2" type="password" placeholder="enter your password" name="pwd"> 
   
 
 <h2 class="pass">Password</h2>
@@ -28,7 +29,7 @@
 
 <p class="forg">forget password?</p>
 
-<button class="btn">Login <span class="text">0</span></button>
+<button class="btn" type="submit">Login</button>
 
 <div class="line"></div>
 <p class="or">or</p>
@@ -40,7 +41,7 @@
 </div>
 
 <p class="last">Don't have an account? <span>Sign up</span></p>
-
+</form>
 <div class="imgdiv">
     <img src="./images/welcomepng.png" alt="">
 </div>

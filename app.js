@@ -1,18 +1,24 @@
-let textDisplay = document.querySelector(".text");
-let button = document.querySelector(".btn");
+let container = document.getElementById("form-wrapper");
 
-let countValue = 0;
 
-function add() {
-    countValue++;
-    textDisplay.innerHTML = countValue;
+let userEmail = "ebukaexample@gmail.com";
+let userPassword = "ebuka4shr24";
 
-    if (countValue === 15) {
-        countValue = 0;
-        button.style.backgroungColour = "yellow";
-    } else {
-        button.style.backgroungColour = "";
-    }
-}
+function login(e) {
+  e.preventDefault();
 
-button.addEventListener("click", add)
+//   let event1 = event.target;
+  const formDetail = new FormData(container); // help to get all the input data from the user
+
+  const email = formDetail.get("email"); // help to get the email of the user
+  const password = formDetail.get("pwd"); // help to get the password of the user
+
+  if (email === userEmail && password === userPassword) {
+    alert("successful login!!!");
+  } else {
+    alert("wrong credentials");
+  }
+
+//   event1.reset()
+} 
+container.addEventListener("submit", login);
